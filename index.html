@@ -12,25 +12,41 @@
 <body>
     <!-- responsive navbar -->
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
-        <h1 class="text-2xl font-bold">GREENDEN</h1>
-
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="size-6 md:hidden">
+        <h1 class="text-2xl font-bold">GREENDEN</h1> <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
-
-        <ul class="flex gap-5 text-gray-600 hidden md:flex">
-            <li>
-                <a class="hover:underline hover:text-black" href="./index.html">Home</a>
-            </li>
-            <li>
-                <a class="hover:underline hover:text-black" href="./product.html">Product</a>
-            </li>
-            <li>
-                <a class="hover:underline hover:text-black" href="./contact.html">Contact</a>
-            </li>
+        <ul class="hidden md:flex gap-5 text-gray-600">
+            <li> <a class="hover:underline hover:text-black" href="./index.html">Home</a> </li>
+            <li> <a class="hover:underline hover:text-black" href="./product.html">Product</a> </li>
+            <li> <a class="hover:underline hover:text-black" href="./contact.html">Contact</a> </li>
         </ul>
     </nav>
+
+    <!-- Side navbar -->
+    <section id="sidenav" class="bg-green-100 sticky z-10 top-0 transition-all duration-1000" style="width: 50%; height: 100vh; right: -50%; position: fixed;">
+        <!-- Close icon -->
+        <div class="text-right p-5" style="border-bottom: 1px solid black;">
+            <p id="closeicon" class="text-2xl inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-5 text-gray-600 p-5 mt-12">
+            <li>
+                <a href="./index.html" class="hover:underline hover:text-black">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="./product.html" class="hover:underline hover:text-black">
+                    Product
+                </a>
+            </li>
+            <li>
+                <a href="./contact.html" class="hover:underline hover:text-black">
+                    Contact
+                </a>
+            </li>
+        </ul>
+    </section>
     <!-- header section -->
     <section class="bg-green-100 p-4 md:p-10 flex justify-center">
         <div>
@@ -125,15 +141,18 @@
                     <p class="font-bold text-yellow-300">Priya S. ⭐⭐⭐⭐⭐</p>
                 </div>
                 <div class="bg-green-900 p-5 container">
-                    <p>Great collection of indoor plants at reasonable prices. The ordering process was simple and delivery was quick.</p>
+                    <p>Great collection of indoor plants at reasonable prices. The ordering process was simple and
+                        delivery was quick.</p>
                     <p class="font-bold text-yellow-300">Arun K. ⭐⭐⭐⭐⭐</p>
                 </div>
                 <div class="bg-green-900 p-5 container">
-                    <p>I loved the plant I received. It was healthy, fresh, and exactly like the picture shown on the website.</p>
+                    <p>I loved the plant I received. It was healthy, fresh, and exactly like the picture shown on the
+                        website.</p>
                     <p class="font-bold text-yellow-300">Meena R. ⭐⭐⭐⭐⭐</p>
                 </div>
                 <div class="bg-green-900 p-5 container">
-                    <p>Good quality plants and smooth delivery. The care instructions were especially helpful for someone new to gardening.</p>
+                    <p>Good quality plants and smooth delivery. The care instructions were especially helpful for
+                        someone new to gardening.</p>
                     <p class="font-bold text-yellow-300">Rahul M. ⭐⭐⭐⭐☆</p>
                 </div>
             </div>
@@ -142,19 +161,20 @@
 
     </section>
     <!-- news letter -->
-     <section class="text-center">
+    <section class="text-center">
         <h1 class="font-bold text-3xl mt-5">Join Our News Letter</h1>
         <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
         <input type="text" class="border border-black p-2 m-3" style="width: 80%;">
         <br>
         <button class="bg-black text-white p-3 underline m-1">Subscribe</button>
-     </section>
-     <!-- footer -->
-      <section class="bg-green-100 p-10 flex flex-col gap-5">
+    </section>
+    <!-- footer -->
+    <section class="bg-green-100 p-10 flex flex-col gap-5">
         <h1 class="text-4xl font-bold">GREENDEN</h1>
         <p>The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
         <p>©2026 greenden.com</p>
-      </section>
+    </section>
+    <script src="index.js"></script>
 </body>
 
 </html>
